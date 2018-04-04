@@ -1,0 +1,34 @@
+//--------------------------------
+//
+// content.scss
+//
+//--------------------------------
+a{
+  color: $link;
+  &:hover{ color: $link-hover }
+  &:active{ color: $link-active }
+  span{
+    &.green{
+      color: green;
+    }
+    &.red{
+      color: red;
+    }
+  }
+}
+h2{
+  color: $pink;
+  @include mqSP{
+    color: $blue;
+  }
+}
+body{
+  background: #fff url(../../images/photo.jpg) center center no-repeat;
+  background-size: cover;
+}
+.block{
+  display: flex;
+  &__item{
+    background: green;
+  }
+}

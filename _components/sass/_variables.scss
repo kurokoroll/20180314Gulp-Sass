@@ -1,0 +1,54 @@
+//-------------------------------------------------------
+// font
+//-------------------------------------------------------
+$baseFont: 14px;
+$baseFont-s: 12px;
+$font-gothic: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN' , 'ＭＳ Ｐゴシック', 'MS P Gothic', Meiryo , 'メイリオ', '游ゴシック', YuGothic;
+
+//-------------------------------------------------------
+//  color
+//-------------------------------------------------------
+$black: #000;
+$gray: #888889;
+$white: #fff;
+$pink: #E38692;
+$yellow: #FFF280;
+$green: #64C99B;
+$sky: #6CBAD8;
+$blue: #4B75B9;
+$purple: #B492CC;
+
+// round
+//------------------------------------------
+$radius: 4px;
+$radius-circle: 50%;
+
+// link
+//------------------------------------------
+$link: $blue;
+$link-hover: lighten($blue, 10%);
+$link-visited: $purple;
+$link-active: darken($blue, 10%);
+
+// width
+//------------------------------------------
+$content-width: 1190px;
+$max-width: 1800px;
+
+// space
+//------------------------------------------
+$space: 15px;
+$mbspace: 10px;
+
+// mixin
+//------------------------------------------
+@mixin mqSP{
+  @media only screen and (max-width: 767px){
+    @content;
+  }
+}
+@mixin mqPC{
+  @media only screen and (min-width: 768px){
+    @content;
+  }
+}
